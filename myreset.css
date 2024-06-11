@@ -1,225 +1,223 @@
 :root {
-    /*Colors reset*/
-    --color-accent-100: ;
-    --color-accent-400: ;
+  /*Colors reset*/
+  --clr-accent-100: ;
+  --clr-accent-400: ;
+  --clr-primary-100: ;
+  --clr-primary-400: ;
+  --clr-neutral-100: ;
+  --clr-neutral-400: ;
 
-    --color-primary-100: ;
-    --color-primary-400: ;
+  /* Font Family reset*/
+  --ff-primary: "Playfair Display", serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
 
-    --color-neutral-100: ;
-    --color-neutral-400: ;
+  /* Font weight reset*/
+  --fw-regular: ;
+  --fw-semi-bold: ;
+  --fw-bold: ;
 
-    /* Font Family reset*/
-    --font-family-primary: ;
+  /* Font size reset*/
+  --fs-100: rem;
+  --fs-300: rem;
+  --fs-400: rem;
+  --fs-500: rem;
+  --fs-600: rem;
+  --fs-700: rem;
+  --fs-800: rem;
+  --fs-900: rem;
 
-    --font-family-body: var(--font-family-primary);
-    --font-family-heading: var(--font-family-primary);
-
-    /* Font weight reset*/
-    --font-weight-regular: ;
-    --font-weight-semi-bold: ;
-    --font-weight-bold: ;
-
-    /* Font size reset*/
-    --font-size-100: rem;
-    --font-size-300: rem;
-    --font-size-400: rem;
-    --font-size-500: rem;
-    --font-size-600: rem;
-    --font-size-700: rem;
-    --font-size-800: rem;
-    --font-size-900: rem;
-
-    /* Mobile font size reset*/
-    --font-size-body: ;
-
-    --font-size-primary-heading: ;
-    --font-size-secondary-heading: ;
-
-    --font-size-nav: ;
-    --font-size-button: ;
+  /* Mobile font size reset*/
+  --fs-body: ;
+  --fs-primary-heading: ;
+  --fs-secondary-heading: ;
+  --fs-nav: ;
+  --fs-button: ;
 }
 
 /* Desktop font size reset*/
 @media (min-width: 50em) {
-    :root {
-        --font-size-body: ;
-
-        --font-primary-heading: ;
-        --font-size-secondary-heading: ;
-
-        --font-size-nav: ;
-        --font-size-button: ;
-    }
+  :root {
+    --fs-body: ;
+    --fs-primary-heading: ;
+    --fs-secondary-heading: ;
+    --fs-nav: ;
+    --fs-button: ;
+  }
 }
 
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin, padding, and set font to inherit */
 * {
-    margin: 0;
-    padding: 0;
-    font: inherit;
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
-    list-style: none;
+  list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Set the html and body to 100% height */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 /* Set core body defaults */
 body {
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture svg {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Utility classes */
 
 /* Colors */
 .text-primary-100 {
-    color: var(--color-primary-100);
+  color: var(--color-primary-100);
 }
 
 .text-primary-400 {
-    color: var(--color-primary-400);
+  color: var(--color-primary-400);
 }
 
 .text-accent-100 {
-    color: var(--color-accent-100);
+  color: var(--color-accent-100);
 }
 
 .text-accent-400 {
-    color: var(--color-accent-400);
+  color: var(--color-accent-400);
 }
 
 .text-neutral-100 {
-    color: var(--color-neutral-100);
+  color: var(--color-neutral-100);
 }
 
 .text-neutral-400 {
-    color: var(--color-neutral-400);
+  color: var(--color-neutral-400);
 }
 
 /* Background-color  */
-.background-primary-100 {
-    background-color: var(--color-primary-100);
+.bg-primary-100 {
+  background-color: var(--color-primary-100);
 }
 
-.background-primary-400 {
-    background-color: var(--color-primary-400);
+.bg-primary-400 {
+  background-color: var(--color-primary-400);
 }
 
-.background-accent-100 {
-    background-color: var(--color-accent-100);
+.bg-accent-100 {
+  background-color: var(--color-accent-100);
 }
 
-.background-accent-400 {
-    background-color: var(--color-accent-400);
+.bg-accent-400 {
+  background-color: var(--color-accent-400);
 }
 
-.background-neutral-100 {
-    background-color: var(--color-neutral-100);
+.bg-neutral-100 {
+  background-color: var(--color-neutral-100);
 }
 
-.background-neutral-400 {
-    background-color: var(--color-neutral-400);
+.bg-neutral-400 {
+  background-color: var(--color-neutral-400);
 }
 
 /* Font weight */
-.font-weight-regular {
-    font-weight: var(--font-weight-regular);
+.fw-regular {
+  font-weight: var(--font-weight-regular);
 }
 
-.font-weight-semi-bold {
-    font-weight: var(--font-weight-semi-bold);
+.fw-semi-bold {
+  font-weight: var(--font-weight-semi-bold);
 }
 
-.font-weight-bold {
-    font-weight: var(--font-weight-bold);
+.fw-bold {
+  font-weight: var(--font-weight-bold);
 }
 
 /* Font size */
-.font-size-primary-heading {
-    font-size: var();
+.fs-primary-heading {
+  font-size: var();
 }
 
-.font-size-secondary-heading {
-    font-size: var();
+.fs-secondary-heading {
+  font-size: var();
 }
 
-.font-size-100 {
-    font-size: var(--font-size-100);
+.fs-100 {
+  font-size: var(--font-size-100);
 }
 
-.font-size-300 {
-    font-size: var(--font-size-300);
+.fs-300 {
+  font-size: var(--font-size-300);
 }
 
-.font-size-400 {
-    font-size: var(--font-size-400);
+.fs-400 {
+  font-size: var(--font-size-400);
 }
 
-.font-size-500 {
-    font-size: var(--font-size-500);
+.fs-500 {
+  font-size: var(--font-size-500);
 }
 
-.font-size-600 {
-    font-size: var(--font-size-600);
+.fs-600 {
+  font-size: var(--font-size-600);
 }
 
-.font-size-700 {
-    font-size: var(--font-size-700);
+.fs-700 {
+  font-size: var(--font-size-700);
 }
 
-.font-size-800 {
-    font-size: var(--font-size-800);
+.fs-800 {
+  font-size: var(--font-size-800);
 }
 
-.font-size-900 {
-    font-size: var(--font-size-900)
+.fs-900 {
+  font-size: var(--font-size-900);
+}
+
+/* General style */
+body {
+  background: ;
 }
